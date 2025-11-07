@@ -4,7 +4,7 @@ public class Node<K,V> {
     int hash;
     Node<K,V> head;
     Node<K,V> next;
-    Node<K,V> previous;
+    Node<K,V> tail;
     public Node(K k,V v)
     {
         key=k;
@@ -22,6 +22,10 @@ public class Node<K,V> {
 
     public V getValue() {
         return value;
+    }
+
+    public void setValue(V value) {
+       this.value=value;
     }
 
     public K getKey() {
